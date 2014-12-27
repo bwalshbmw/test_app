@@ -1,0 +1,10 @@
+<%= @message.html_safe %>
+
+<form action="/submit" method="POST">
+	<%= token_tag nil %>
+	<input type="number" name="a"/>
+	<input type="number" name="b"/>
+	<input type="number" name="c"/>
+	<br />
+	<input type="submit" />
+</form>
